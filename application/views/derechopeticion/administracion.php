@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Administracion de derechos de peticion</title>
+	<title>Administración de derechos de petición</title>
 <?php 
 foreach($css_files as $file): ?>
 	<link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
@@ -28,7 +28,7 @@ a:hover
 </style>
 </head>
 <body>
-	<h1>Administración de Derechos de peticion</h1>
+	<h1>Administración de Derechos de petición</h1>
     <div>
 		<?php echo $output; ?>
 			
