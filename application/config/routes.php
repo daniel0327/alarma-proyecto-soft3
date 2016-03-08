@@ -40,6 +40,7 @@
 
 $route['default_controller'] = "inicio";
 $route['404_override'] = '';
+$route['pruebas'] = "TestingController";
 
 
 /* End of file routes.php */
