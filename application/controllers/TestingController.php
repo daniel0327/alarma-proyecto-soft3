@@ -21,6 +21,10 @@ function crearDerechodePeticion()
 	} catch(PDOException $e) {
 		echo 'ERROR: ' . $e->getMessage();
 	}
+
+		$records = $databaseConnection->prepare("DELETE FROM `derechopeticion` WHERE ((`Radicado_Interno` = 5435 AND               `Usuario_codigo_rol` = 1) OR (`Radicado_Interno` = 87364 AND `Usuario_codigo_rol` = 1) OR (`Radicado_Interno` = 233333 AND `Usuario_codigo_rol` = 1))");
+		$records->execute();
+
 		$records = $databaseConnection->prepare("INSERT INTO `derechopeticion` (`Radicado_Interno`, `Radicado_UQ`, `Asunto`, `Tipo_Derecho_Peticion`, `Solicitante`, `Responsable`, `Correo_Responsable`, `Fecha_Recibido`, `Fecha_Vencimiento`, 
 		`Usuario_codigo_rol`) VALUES
 			(5435, 456, 'informacion', 'informacion', 'jorge contreras', 'andres marin', 'andres@uniquindio.edu.co', '2016-02-18', '2016-03-10', 1),
@@ -47,7 +51,9 @@ function crearTutela()
 	} catch(PDOException $e) {
 		echo 'ERROR: ' . $e->getMessage();
 	}
-	
+
+	$records = $databaseConnection->prepare("DELETE FROM `tutela` WHERE ((`Radicado_Interno` = 34234 AND `Usuario_codigo_rol` = 1) OR (`Radicado_Interno` = 988773 AND `Usuario_codigo_rol` = 1))");
+		$records->execute();
 
 
 	$records = $databaseConnection->prepare("INSERT INTO `tutela` (`Radicado_Interno`, `Radicado_UQ`, `Asunto`, `Solicitante`, 										`Responsable`, `Correo_Responsable`, `Fecha_Recibido`, `Fecha_Vencimiento`, `Usuario_codigo_rol`) VALUES	(34234, 5435, 'devolucion de dinero', 'jhon', '												jorge', 'jose@hotmail.com', '2016-01-20', '2016-03-22', 1), (988773, 65534, '											integracion a la universidad', 'manuel', 'luis', 'uq@hotmail.com', '2016-02-20', '										2016-03-9', 1)");
@@ -73,7 +79,8 @@ function crearUsuario()
 	}
 	
 	
-
+	$records = $databaseConnection->prepare("DELETE FROM `usuario` WHERE `codigo_rol` = 2;");
+		$records->execute();
 
 	$records = $databaseConnection->prepare("INSERT INTO `usuario` (`codigo_rol`, `perfil`, `username`, `passsword`) VALUES
 											(2, 'administrador', 'admin', 'admin');");
