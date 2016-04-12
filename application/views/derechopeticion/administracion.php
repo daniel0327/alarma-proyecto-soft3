@@ -46,7 +46,7 @@ a:hover
        }
 </style>
 <div align="">
-  <form name="form1" action="http://localhost/alarma/tecnico"  >
+  <form name="form1" action="http://localhost/alertas-proyecto-soft3/tecnico"  >
     <input type="submit" value="MENU PRINCIPAL" class="boton">
   </form>
 </div>
