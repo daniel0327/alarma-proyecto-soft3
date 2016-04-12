@@ -16,7 +16,7 @@ foreach($css_files as $file): ?>
 
 
 
-href="<?php echo base_url(); ?>http://localhost/alarma/assets/bootstrap/css/bootstrap.css" />
+href="<?php echo base_url(); ?>http://localhost/alertas-proyecto-soft3/assets/bootstrap/css/bootstrap.css" />
 
 
 
@@ -59,7 +59,7 @@ a:hover
        }
 </style>
 <div align="">
-  <form name="form1" action="http://localhost/alarma/tecnico"  >
+  <form name="form1" action="http://localhost/alertas-proyecto-soft3/tecnico"  >
     <input type="submit" value="MENU PRINCIPAL" class="boton">
   </form>
 </div>
