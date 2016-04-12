@@ -1,6 +1,6 @@
 <?php
 require_once('CRUD_DB.php');
-class RemoteConnectTest extends PHPUnit_Framework_TestCase
+class CRUDTest extends PHPUnit_Framework_TestCase
 {
   public function setUp(){ }
   public function tearDown(){ }
