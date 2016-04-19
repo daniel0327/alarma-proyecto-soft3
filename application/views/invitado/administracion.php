@@ -84,14 +84,7 @@
 	 	 <br>
 	<br>
 	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+
 			  <br /><a href='inicio'>Regresar al login</a> 
 	 </li>
 	
