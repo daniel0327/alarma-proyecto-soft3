@@ -16,7 +16,7 @@ foreach($css_files as $file): ?>
 
 
 
-href="<?php echo base_url(); ?>http://localhost/alertas-proyecto-soft3/assets/bootstrap/css/bootstrap.css" />
+href="<?php echo base_url(); ?>assets/bootstrap/css/bootstrap.css" />
 
 
 
