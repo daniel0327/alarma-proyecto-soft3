@@ -66,12 +66,12 @@
 			  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 			 
 			 
-			 <li>	    		<a href="index.php/reportes">REPORTES TUTELAS</a>
+			 <li>	    		<a href="reportes">REPORTES TUTELAS</a>
 			    </li>
-			     <li>	    		<a href="index.php/reportesP">REPORTES PETICIÒN</a>
+			     <li>	    		<a href="reportesP">REPORTES PETICIÒN</a>
 			    </li>
 			    </li>
-				 <li>	    		<a href="index.php/graficos">ESTADISTICAS</a>
+				 <li>	    		<a href="graficos">ESTADISTICAS</a>
 				  </li>
 				 
 			  </ul>

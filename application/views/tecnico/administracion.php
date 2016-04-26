@@ -50,11 +50,8 @@
 
 <body>
 
-		<img src="assets/images/uniquindio.png" id="logo">
-	<div id="container">
-
-
-       
+		<img src="assets/images/uniquindio.PNG" id="logo">
+	<div id="container">       
 		<h1>Sistema de trazabilidad para derechos de peticion y tutelas UQ</h1>
 	    <div>
 	    	
@@ -64,15 +61,15 @@
 			    <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-			    <li>				<a href="index.php/tutelas/administracion">TUTELAS</a>
+			    <li>				<a href="tutelas">TUTELAS</a>
 			    </li>
-			    <li>	    		<a href="index.php/derechopeticion/administracion">DERECHOS DE PETICIÓN</a>
+			    <li>	    		<a href="derechopeticion">DERECHOS DE PETICIÓN</a>
 			    </li>
-			    <li>	    		<a href="index.php/reportes">REPORTES TUTELAS</a>
+			    <li>	    		<a href="reportes">REPORTES TUTELAS</a>
 			    </li>
-			     <li>	    		<a href="index.php/reportesP">REPORTES PETICIÒN</a>
+			     <li>	    		<a href="reportesP">REPORTES PETICIÓN</a>
 			    </li>
-				 <li>	    		<a href="index.php/graficos">ESTADISTICAS</a>
+				 <li>	    		<a href="graficos">ESTADISTICAS</a>
 				  </li>
 				 
 			  </ul>
@@ -81,8 +78,7 @@
 	    </div>
 
 	</div>
-	 <li>
-	 <br>
+	<br>
 	<br>
 	<br>
 	<br>
@@ -92,7 +88,6 @@
 
 	
 			  <br /><a href='inicio'>Regresar al login</a> 
-	 </li>
 	
 </body>
 </html>

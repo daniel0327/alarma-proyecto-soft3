@@ -8,9 +8,9 @@ class reportesP extends CI_Controller
 	  function index(){
     
 	 $this->load->helper('url');
-	       $this->load->model('Reportes_model');
+	       $this->load->model('reportes_model');
 	   
-	    $ultimosArticulos = $this->Reportes_model->dame_ultimos_articulos();
+	    $ultimosArticulos = $this->reportes_model->dame_ultimos_articulos();
       
       //creo el array con datos de configuración para la vista
       $datos_vista = array('rs_articulos' => $ultimosArticulos);
@@ -46,8 +46,8 @@ class reportesP extends CI_Controller
 	 
 	   
 	 $this->load->helper('url');
-	 $this->load->model('Reportes_model');
-	 $ultimosArticulos = $this->Reportes_model->dame_ultimos_articulos();
+	 $this->load->model('reportes_model');
+	 $ultimosArticulos = $this->reportes_model->dame_ultimos_articulos();
       
       //creo el array con datos de configuración para la vista
      $datos_vista = array('rs_articulos' => $ultimosArticulos);
