@@ -76,7 +76,7 @@ jQuery(document).ready(function()
 	
 var issueListingGrid = null;
        jQuery("#flex1").flexigrid({
-		 url: 'http://localhost/alarma/reportes/load', dataType: 'json', colModel : 
+		 url: 'http://localhost/alertas-proyecto-soft3/reportes/load', dataType: 'json', colModel : 
 	   [
 	   {display: 'Radicado Interno', name : 'radicadoInterno',width: 180 , sortable : true, align: 'left'},
 	    {display: 'Asunto', name : 'asunto',width: 160 , sortable : true, align: 'left'},
