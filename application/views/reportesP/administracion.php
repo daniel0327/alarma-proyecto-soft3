@@ -10,8 +10,8 @@
 	
 	
  <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="http://localhost/alarma/application/views/reportesP/flexigrid.pack.js"></script>
-<link rel="stylesheet" type="text/css" href="http://localhost/alarma/application/views/reportesP/flexigrid.css">
+    <script type="text/javascript" charset="utf8" src="application/views/reportesP/flexigrid.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="application/views/reportesP/flexigrid.css">
 
 
 	
@@ -90,7 +90,7 @@ jQuery(document).ready(function()
 	
 var issueListingGrid = null;
        jQuery("#flex1").flexigrid({
-		 url: 'http://localhost/alarma/reportesP/load', dataType: 'json', colModel : 
+		 url: 'reportesP/load', dataType: 'json', colModel : 
 	   [
 	   {display: 'Radicado Interno', name : 'radicadoInterno',width: 180 , sortable : true, align: 'left'},
 	    {display: 'Asunto', name : 'asunto',width: 160 , sortable : true, align: 'left'},

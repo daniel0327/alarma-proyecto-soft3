@@ -25,7 +25,7 @@ class DerechoPeticion extends CI_Controller {
 		 * Mandamos todo lo que llegue a la funcion
 		 * administracion().
 		 **/
-		redirect('derechopeticion/administracion');
+		redirect('DerechoPeticion/administracion');
 	}
 
 	/*

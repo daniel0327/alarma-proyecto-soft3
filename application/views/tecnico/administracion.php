@@ -61,9 +61,9 @@
 			    <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-			    <li>				<a href="tutelas">TUTELAS</a>
+			    <li>				<a href="Tutelas">TUTELAS</a>
 			    </li>
-			    <li>	    		<a href="derechopeticion">DERECHOS DE PETICIÓN</a>
+			    <li>	    		<a href="DerechoPeticion">DERECHOS DE PETICIÓN</a>
 			    </li>
 			    <li>	    		<a href="reportes">REPORTES TUTELAS</a>
 			    </li>

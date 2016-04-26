@@ -11,19 +11,19 @@ class graficos extends CI_Controller
 	 
 	     
       //cargo el modelo de artículos
-      $this->load->model('Articulo_model');
-	   $this->load->model('Reportes_model');
+      $this->load->model('articulo_model');
+	   $this->load->model('reportes_model');
 	  
       
       //pido los ultimos artículos al modelo
-      $tutela = $this->Articulo_model->tamañoTutela();
+      $tutela = $this->articulo_model->tamañoTutela();
       
       //creo el array con datos de configuración para la vista
      
 
-       $quejas = $this->Reportes_model->tamañoQuejas();
-       $informacion = $this->Reportes_model->tamañoInformacion();
-       $consulta = $this->Reportes_model->tamañoConsulta();
+       $quejas = $this->reportes_model->tamañoQuejas();
+       $informacion = $this->reportes_model->tamañoInformacion();
+       $consulta = $this->reportes_model->tamañoConsulta();
 	  
 	  //var_dump($quejas);
 	   $datos_vista = array('tutelas' => $tutela,'quejas' => $quejas,'informacion'=>$informacion,'consulta'=>$consulta);

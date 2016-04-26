@@ -50,7 +50,7 @@
 
 <body>
 
-		<img src="assets/images/uniquindio.png" id="logo">
+		<img src="assets/images/uniquindio.PNG" id="logo">
 	<div id="container">
 
 

@@ -24,7 +24,7 @@ class Tutelas extends CI_Controller {
 		 * Mandamos todo lo que llegue a la funcion
 		 * administracion().
 		 **/
-		redirect('tutelas/administracion');
+		redirect('Tutelas/administracion');
 	}
 
 	/*
@@ -107,7 +107,7 @@ class Tutelas extends CI_Controller {
 	
 		public function _GC_Estatus($value, $row) 
 		{
-			$inicio=$row->Fecha_Recibido;
+			$inicio=date('Y-m-d');
 			$fin=$row->Fecha_Vencimiento;
 
 			
@@ -115,7 +115,7 @@ class Tutelas extends CI_Controller {
           //  var_dump(strtotime($fin));
 					
 					
-						if( strtotime($inicio) < strtotime($fin)) 
+						if( $inicio < $fin) 
 						{
 							return '<span class="alert alert-success">Activa</span>';
 

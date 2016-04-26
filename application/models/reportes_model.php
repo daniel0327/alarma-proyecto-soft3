@@ -18,10 +18,12 @@ class Reportes_model extends CI_Model {
 		  $hoy= date('Y-m-d',strtotime('-1 day')) ;
 
                 $hoy = strtotime($hoy);
+
+
 			
 		 
 		if($tamaño>0)
-	      {
+	    {
 			 
 			// echo "hay datos"; 
 			 foreach ($result as $row)

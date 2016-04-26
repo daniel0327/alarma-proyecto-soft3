@@ -5,8 +5,8 @@
 	<title>Reporte tutelas</title>
 
     <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="http://localhost/alarma/application/views/reportes/flexigrid.pack.js"></script>
-<link rel="stylesheet" type="text/css" href="http://localhost/alarma/application/views/reportes/flexigrid.css">
+    <script type="text/javascript" charset="utf8" src="application/views/reportes/flexigrid.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="application/views/reportes/flexigrid.css">
 
 
 </head>
@@ -76,7 +76,7 @@ jQuery(document).ready(function()
 	
 var issueListingGrid = null;
        jQuery("#flex1").flexigrid({
-		 url: 'http://localhost/alertas-proyecto-soft3/reportes/load', dataType: 'json', colModel : 
+		 url: 'reportes/load', dataType: 'json', colModel : 
 	   [
 	   {display: 'Radicado Interno', name : 'radicadoInterno',width: 180 , sortable : true, align: 'left'},
 	    {display: 'Asunto', name : 'asunto',width: 160 , sortable : true, align: 'left'},
