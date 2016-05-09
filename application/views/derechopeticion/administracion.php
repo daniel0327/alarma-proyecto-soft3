@@ -115,15 +115,14 @@ a:hover
       <input type="submit" value="MENU PRINCIPAL" class="boton">
     </form>
 </div>
-
 <br>
 <br>
 <br>
 
-    <h1>Enviar Notificación a un responsable</h1>
+    <h3>Enviar Notificación a un responsable</h3>
     <div class="correo">
       <form action="" method="post">      
-        <input type="text" placeholder="radicado interno" name="codigoCorreo">
+        <input type="text" placeholder="Radicado interno" name="codigoCorreo">
         <input type="submit" name='submit' value="Notificar" class='boton'>
       </form>
     </div>
