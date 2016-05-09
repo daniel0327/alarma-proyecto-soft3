@@ -46,13 +46,10 @@ class DerechoPeticion extends CI_Controller {
 
 			/* Le asignamos un nombre */
 			$crud->set_subject('Derecho Petición');
-			$crud->set_subject('Derecho Petición');
 
 			/* Asignamos el idioma español */
 			$crud->set_language('spanish');
 			
-			
-	//$crud->field_type('Asunto','set',array('Angelica','Ana'));
 	
 	
 			/* Aqui le decimos a grocery que estos campos son obligatorios */
@@ -66,8 +63,7 @@ class DerechoPeticion extends CI_Controller {
 				'Solicitante', 
 				'Correo_Responsable',
 				'Fecha_Recibido',
-				'Fecha_Vencimiento',
-				'Usuario_cedula'
+				'Fecha_Vencimiento'
 				
 
 
@@ -89,7 +85,7 @@ class DerechoPeticion extends CI_Controller {
 			
 			
 		
-				$crud->field_type('Tipo_Derecho_Peticion','enum',array('queja','informacion','consulta'));
+				$crud->field_type('Tipo_Derecho_Peticion','enum',array('queja','información','consulta'));
 			//$crud->set_relation('Asunto', 'derechopeticion', 'Asunto');
 			
 			/* Generamos la tabla */

@@ -117,12 +117,12 @@ class Tutelas extends CI_Controller {
 					
 						if( $inicio < $fin) 
 						{
-							return '<span class="alert alert-success">Activa</span>';
+							return 'Activa';
 
 						}
 						else 
 						{
-						   return '<span class="alert alert-danger">Inactiva</span>';
+						   return 'Inactiva';
 		
 					    }
 	
