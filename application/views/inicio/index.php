@@ -37,33 +37,35 @@
 			$results = $records->fetch(PDO::FETCH_ASSOC);
 		
 			if(count($results) > 0 )
+			{
+				if ($password == $results['passsword'] && "tecnico"==$results['perfil'] )
+				{
+			
+					$_SESSION['username'] = $results['username'];
+					header('location:tecnico');
+					exit;
+				}
 				
-			if ($password == $results['passsword'] && "tecnico"==$results['perfil'] )
-			{
-				//echo  password_verify($password, $results['passsword']);
-				$_SESSION['username'] = $results['username'];
-				header('location:tecnico');
-				exit;
-			}
+				
+				
+				
+					if ($password == $results['passsword'] && "administrador"==$results['perfil'] )
+				{
+					
+					$_SESSION['username'] = $results['username'];
+					header('location:administrador');
+					exit;
+				}
+				
+					if ($password == $results['passsword'] && "invitado"==$results['perfil'] )
+				{
+					
+					$_SESSION['username'] = $results['username'];
+					header('location:invitado');
+					exit;
+				}
+			}	
 			
-			
-			
-			
-				if ($password == $results['passsword'] && "administrador"==$results['perfil'] )
-			{
-				//echo  password_verify($password, $results['passsword']);
-				$_SESSION['username'] = $results['username'];
-				header('location:administrador');
-				exit;
-			}
-			
-				if ($password == $results['passsword'] && "invitado"==$results['perfil'] )
-			{
-				//echo  password_verify($password, $results['passsword']);
-				$_SESSION['username'] = $results['username'];
-				header('location:invitado');
-				exit;
-			}
 			
 			
 				echo"<script>alert('El usuario no existe o debe de especificar bien sus datos')</script>";;

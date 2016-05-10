@@ -1,5 +1,8 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
+<?php 
+if ( ! defined('BASEPATH')) 
+	{
+		exit('No direct script access allowed');
+	}
 /* Heredamos de la clase CI_Controller */
 class Tutelas extends CI_Controller {
 
@@ -21,7 +24,7 @@ class Tutelas extends CI_Controller {
 	function index() 
 	{
 		/*
-		 * Mandamos todo lo que llegue a la funcion
+		 * Mandamos lo que llegue a la funcion
 		 * administracion().
 		 **/
 		redirect('Tutelas/administracion');
@@ -65,7 +68,6 @@ class Tutelas extends CI_Controller {
 				'Fecha_Vencimiento' 
 	
 			);
-	        //$crud->field_type('Solicitante','dropdown',array('Angelica','Ana'));
 		
 
 			/* Aqui le indicamos que campos deseamos mostrar */
@@ -111,8 +113,6 @@ class Tutelas extends CI_Controller {
 			$fin=$row->Fecha_Vencimiento;
 
 			
-	      //  var_dump(strtotime($inicio));
-          //  var_dump(strtotime($fin));
 					
 					
 						if( $inicio < $fin) 

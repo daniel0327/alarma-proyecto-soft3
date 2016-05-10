@@ -1,5 +1,8 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
+<?php 
+if ( ! defined('BASEPATH'))
+{
+	exit('No direct script access allowed');
+}
 /* Heredamos de la clase CI_Controller */
 class reportesP extends CI_Controller 
 
@@ -14,7 +17,7 @@ class reportesP extends CI_Controller
       
       //creo el array con datos de configuración para la vista
       $datos_vista = array('rs_articulos' => $ultimosArticulos);
-	  	 // $this->table->set_heading($datos_vista );
+	  	 
 		 
 	
 	  
@@ -50,7 +53,7 @@ class reportesP extends CI_Controller
       
       //creo el array con datos de configuración para la vista
      $datos_vista = array('rs_articulos' => $ultimosArticulos);
-	  	 // $this->table->set_heading($datos_vista );
+	  	 
 		 
 	
 	  
