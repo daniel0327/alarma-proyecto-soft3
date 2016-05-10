@@ -75,7 +75,7 @@ public function actualizarDerechodePeticion()
 	}
 
 		$records = $databaseConnection->prepare(
-			"UPDATE FROM derechopeticion SET Solicitante = 'jorge contreras' WHERE Radicado_Interno = 87364");
+			"UPDATE derechopeticion SET Solicitante = 'jorge contreras' WHERE Radicado_Interno = 87364");
 		$records->execute();
 
 		
@@ -147,7 +147,7 @@ public function actualizarTutela()
 		echo 'ERROR: ' . $e->getMessage();
 	}
 
-		$records = $databaseConnection->prepare("UPDATE FROM `tutela` SET `Solicitante` = 'jhon contreras'  WHERE (`Radicado_Interno` = 988773)");
+		$records = $databaseConnection->prepare("UPDATE `tutela` SET `Solicitante` = 'jhon contreras'  WHERE (`Radicado_Interno` = 988773)");
 		$records->execute();
 
 		
