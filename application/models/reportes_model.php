@@ -7,6 +7,9 @@ class Reportes_model extends CI_Model {
         $this->load->database();
     }
    
+    /**
+   *metodo llamado por el controlador de reportes de derechos de peticion que devuelve un informe acerca del estado de estos
+   */
    function dame_ultimos_articulos(){
      
 	    $query = $this->db->query("SELECT Solicitante,Asunto,Radicado_Interno,Responsable,Fecha_Recibido,Fecha_Vencimiento,Tipo_Derecho_Peticion FROM derechopeticion");
@@ -62,8 +65,8 @@ class Reportes_model extends CI_Model {
 								 $infoConsulta21= date('Y-m-d',strtotime('-22 days', strtotime($FechaVencimiento)));
 						 
 						 
-						 
-						         $informativo1 = date('Y-m-d',strtotime('-21 days', strtotime($FechaVencimiento))); // osea faltan 5 dias para que se venza
+						 		// osea faltan 5 dias para que se venza
+						         $informativo1 = date('Y-m-d',strtotime('-21 days', strtotime($FechaVencimiento))); 
 								 $informativo2= date('Y-m-d',strtotime('-20 days', strtotime($FechaVencimiento))); 
 								 $informativo3= date('Y-m-d',strtotime('-19 days', strtotime($FechaVencimiento))); 
 								 $informativo4= date('Y-m-d',strtotime('-18 days', strtotime($FechaVencimiento))); 
@@ -71,7 +74,7 @@ class Reportes_model extends CI_Model {
 								 $informativo6= date('Y-m-d',strtotime('-16 days', strtotime($FechaVencimiento))); 
 								 $informativo7= date('Y-m-d',strtotime('-15 days', strtotime($FechaVencimiento))); 
                                  		 
-					             $aceptable1 = date('Y-m-d',strtotime('-14 days', strtotime($FechaVencimiento))); // osea faltan 5 dias para que se venza
+					             $aceptable1 = date('Y-m-d',strtotime('-14 days', strtotime($FechaVencimiento))); 
 								 $aceptable2= date('Y-m-d',strtotime('-13 days', strtotime($FechaVencimiento))); 
 								 $aceptable3= date('Y-m-d',strtotime('-12 days', strtotime($FechaVencimiento))); 
 								 $aceptable4= date('Y-m-d',strtotime('-11 days', strtotime($FechaVencimiento))); 
@@ -80,7 +83,7 @@ class Reportes_model extends CI_Model {
 								 $aceptable7= date('Y-m-d',strtotime('-8 days', strtotime($FechaVencimiento))); 
 
 		                         $critico1 = date('Y-m-d',strtotime('-8 days', strtotime($FechaVencimiento)));
-								 $critico1 = date('Y-m-d',strtotime('-7 days', strtotime($FechaVencimiento))); // 
+								 $critico1 = date('Y-m-d',strtotime('-7 days', strtotime($FechaVencimiento)));
 								 $critico2= date('Y-m-d',strtotime('-6 days', strtotime($FechaVencimiento))); 
 								 $critico3= date('Y-m-d',strtotime('-5 days', strtotime($FechaVencimiento))); 
 								 $critico4= date('Y-m-d',strtotime('-4 days', strtotime($FechaVencimiento))); 
@@ -88,7 +91,7 @@ class Reportes_model extends CI_Model {
 								 $critico6= date('Y-m-d',strtotime('-2 days', strtotime($FechaVencimiento))); 
 								 $critico7= date('Y-m-d',strtotime('-1 days', strtotime($FechaVencimiento))); 
 						 
-			// queja tiene un plazo de 15 dias habiles
+							// queja tiene un plazo de 15 dias habiles
 							 if($tipo=="queja")
 							 {
 
@@ -222,7 +225,10 @@ class Reportes_model extends CI_Model {
 
   
    }
-   
+
+   /**
+   *metodo que calcula la cantidad de derechos de peticion de quejas 
+   */   
      function tamañoQuejas(){
 		
 	     $query = $this->db->query("SELECT Solicitante,Asunto,Radicado_Interno,Responsable,Fecha_Recibido,Fecha_Vencimiento,Tipo_Derecho_Peticion FROM derechopeticion where Tipo_Derecho_Peticion='queja'");
@@ -233,7 +239,10 @@ class Reportes_model extends CI_Model {
 		
 	}
 
-	    function tamañoInformacion(){
+	/**
+    *metodo que calcula la cantidad de derechos de peticion de informacion 
+    */   
+	function tamañoInformacion(){
 		
 	     $query = $this->db->query("SELECT Solicitante,Asunto,Radicado_Interno,Responsable,Fecha_Recibido,Fecha_Vencimiento,Tipo_Derecho_Peticion FROM derechopeticion where Tipo_Derecho_Peticion='informacion'");
          $result= $query->result();
@@ -244,7 +253,9 @@ class Reportes_model extends CI_Model {
 		
 		
 	}
-   
+   		/**
+   		*metodo que calcula la cantidad de derechos de peticion de consultas 
+   		*/   
       function tamañoConsulta(){
 		
 	     $query = $this->db->query("SELECT Solicitante,Asunto,Radicado_Interno,Responsable,Fecha_Recibido,Fecha_Vencimiento,Tipo_Derecho_Peticion FROM derechopeticion where Tipo_Derecho_Peticion='consulta'");

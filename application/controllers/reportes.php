@@ -14,7 +14,7 @@ class reportes extends CI_Controller
       
       //creo el array con datos de configuración para la vista
       $datos_vista = array('rs_articulos' => $ultimosArticulos);
-	  	 // $this->table->set_heading($datos_vista );
+	  	 
 		 
 	
 	  
@@ -31,7 +31,7 @@ class reportes extends CI_Controller
 
 
 	  $json =  json_encode($response);
-	  //echo $json;  
+	   
 	    
 		 
 		 
@@ -41,6 +41,9 @@ class reportes extends CI_Controller
   
    }
    
+   /*
+   funcion que es llamada por el script que crea la tabla de reportes de tutelas
+   */
    function load()
    {
 	 
@@ -51,7 +54,7 @@ class reportes extends CI_Controller
       
       //creo el array con datos de configuración para la vista
      $datos_vista = array('rs_articulos' => $ultimosArticulos);
-	  	 // $this->table->set_heading($datos_vista );
+	  	 
 		 
 	
 	  

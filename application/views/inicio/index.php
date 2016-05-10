@@ -66,7 +66,7 @@
 			}
 			
 			
-				$errMsg .= 'El usuario no existe o debe indicar bien sus campos<br>';
+				echo"<script>alert('El usuario no existe o debe de especificar bien sus datos')</script>";;
 			
 			
 			
@@ -106,7 +106,7 @@ body{
 	bottom: -40px;
 	width: auto;
 	height: auto;
-	background-image: url(http://ginva.com/wp-content/uploads/2012/07/city-skyline-wallpapers-008.jpg);
+	background-image: url(assets/images/uniquindio3.jpg);
 	background-size: cover;
 	-webkit-filter: blur(5px);
 	z-index: 0;
@@ -141,7 +141,7 @@ body{
 }
 
 .header div span{
-	color: #5379fa !important;
+	color: #20912D !important;
 }
 
 .login{
@@ -238,7 +238,7 @@ body{
     <div class="body"></div>
 		<div class="grad"></div>
 		<div class="header">
-			<div>siste<span>Alarmas</span></div>
+			<div>Siste<span>Alarmas</span></div>
 		</div>
 		<br>
 		<?php

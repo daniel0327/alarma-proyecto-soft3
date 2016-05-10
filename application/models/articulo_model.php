@@ -7,7 +7,9 @@ class Articulo_model extends CI_Model {
         $this->load->database();
     }
    
-   
+   /**
+   *metodo llamado por el controlador de reportes de tutelas que devuelve un informe acerca del estado de las tutelas
+   */
    function dame_ultimos_articulos(){
      
 	    $query = $this->db->query("SELECT Fecha_Vencimiento,Solicitante,Fecha_Recibido,Responsable,Radicado_Interno,Asunto FROM tutela");
@@ -116,7 +118,9 @@ class Articulo_model extends CI_Model {
    
    
    
-   
+   /**
+   *metodo que calcula la cantidad de tutelas 
+   */
     function tamañoTutela(){
 		
 	     $query = $this->db->query("SELECT Fecha_Vencimiento,Solicitante,Fecha_Recibido,Responsable,Radicado_Interno,Asunto FROM tutela");

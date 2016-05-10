@@ -12,16 +12,51 @@
 </head>
 <body  BGCOLOR="#D8D8D8">
 
+        <style type="text/css">
+         .boton{
+               font-size:10px;
+               font-family:Verdana,Helvetica;
+               font-weight:bold;
+               color:white;
+               background:black;
+               border:0px;
+               width:130px;
+               height:25px;
+              }
+          header
+          {
+            background: #20912D;
+            -webkit-border-radius: 40px;
+          }
+          footer
+          {
+            background: #20912D;
+            -webkit-border-radius: 40px;
+            height: 90px;
+          }
+
+          p
+          {
+            font-size: 25px;
+            padding-top: 32px;
+          }
+          #logo{
+                display: block;
+                  margin: 15px auto;
+                  height: 165px;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                }
+       </style>
+       <header>
+         <img src="http://localhost/alertas-proyecto-soft3/assets/images/uniquindio.PNG" id="logo">
+       </header>
 
 
-	<div >
-		
+
+	<div>	
 		<br>
-			
-
-	<center><h2>REPORTE DE TUTELAS</h2></center>
-
-    
+	 <center><h2>REPORTE DE TUTELAS</h2></center>    
 	</div>
   
 <div align="left">
@@ -55,7 +90,7 @@
 
 <title>proyecto software</title>
 
-<div><h3>Tabla De Verificacion de Vencimientos </h3></div>
+<div><h3>Tabla De Verificación de Vencimientos </h3></div>
 
 
 <div id="flex1" style=""></div> 
@@ -115,8 +150,10 @@ var issueListingGrid = null;
     <br>
     <div align="left">
 
-	 <input type="button" value="Volver al inicio" onclick="history.back(-1)" />
+	 <input type="button" value="Volver al inicio" onclick="history.back(-1)" class='boton' />
   </div>
-	
+  <footer>
+    <p align="center"> Pertinente Creativa Integradora</p>
+  </footer>  	
 </body>
 </html>

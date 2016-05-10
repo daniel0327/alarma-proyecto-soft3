@@ -81,6 +81,8 @@ body
 {
 	font-family: Arial;
 	font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 a {
     color: blue;
@@ -91,10 +93,37 @@ a:hover
 {
 	text-decoration: underline;
 }
+header
+{
+  background: #20912D;
+  -webkit-border-radius: 40px;
+}
+footer
+{
+  background: #20912D;
+  -webkit-border-radius: 40px;
+  height: 90px;
+}
+
+p
+{
+  font-size: 25px;
+  padding-top: 32px;
+}
+#logo{
+      display: block;
+        margin: 15px auto;
+        height: 165px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
 </style>
 </head>
 <body>
-	<h1>Administración de Derechos de petición</h1>
+<header>
+  <img src="http://localhost/alertas-proyecto-soft3/assets/images/uniquindio.PNG" id="logo">
+</header>
+	<h1>Administración de Derechos de Petición</h1>
     <div>
 		<?php echo $output; ?>
 			
@@ -116,10 +145,6 @@ a:hover
       <input type="submit" value="MENU PRINCIPAL" class="boton">
     </form>
 </div>
-<br>
-<br>
-<br>
-
     <h3>Enviar Notificación a un responsable</h3>
     <div class="correo">
       <form action="" method="post">      
@@ -127,14 +152,10 @@ a:hover
         <input type="submit" name='submit' value="Notificar" class='boton'>
       </form>
     </div>
-		 
-
+    </div>		
     </div>
-		
-	
-		
-		
-		
-    </div>
+    <footer>
+      <p align="center"> Pertinente Creativa Integradora</p>
+    </footer>  
 </body>
 </html>

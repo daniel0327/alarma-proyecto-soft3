@@ -28,7 +28,7 @@ class Tutelas extends CI_Controller {
 	}
 
 	/*
-	 * 
+	 * funcion que define el formato de la tabla de tutelas
  	 **/
 	function administracion()
 	{

@@ -83,8 +83,8 @@ class grocery_CRUD_Model  extends CI_Model  {
     	}
     		
     	$this->db->select($select, false);    	
-    	
-    	if(CI_VERSION == '2.1.0' || CI_VERSION == '2.1.1')//This hack is only for the release 2.1.1 that it seems that it has lot of bugs. They didn't even change the CI_VERSION to 2.1.1!
+    	//This hack is only for the release 2.1.1 that it seems that it has lot of bugs. They didn't even change the CI_VERSION to 2.1.1!
+    	if(CI_VERSION == '2.1.0' || CI_VERSION == '2.1.1')
     	{
     		$results = $this->_hack_for_CI_2_1_1()->data;
     	}
@@ -222,8 +222,8 @@ class grocery_CRUD_Model  extends CI_Model  {
     		$select = $this->relation_n_n_queries($select);
     		
     		$this->db->select($select,false);
-    		
-    		if(CI_VERSION == '2.1.0' || CI_VERSION == '2.1.1')//This hack is only for the release 2.1.1 that it seems that it has lot of bugs. They didn't even change the CI_VERSION to 2.1.1!
+    		//This hack is only for the release 2.1.1 that it seems that it has lot of bugs. They didn't even change the CI_VERSION to 2.1.1!
+    		if(CI_VERSION == '2.1.0' || CI_VERSION == '2.1.1')
     		{
     			return $this->_hack_for_CI_2_1_1()->num_rows;
     		}
@@ -233,8 +233,9 @@ class grocery_CRUD_Model  extends CI_Model  {
     		}    		
     	}
     	else 
-    	{    	
-    		if(CI_VERSION == '2.1.0' || CI_VERSION == '2.1.1')//This hack is only for the release 2.1.1 that it seems that it has lot of bugs. They didn't even change the CI_VERSION to 2.1.1!
+    	{   
+            //This hack is only for the release 2.1.1 that it seems that it has lot of bugs. They didn't even change the CI_VERSION to 2.1.1! 	
+    		if(CI_VERSION == '2.1.0' || CI_VERSION == '2.1.1')
     		{
     			return $this->_hack_for_CI_2_1_1()->num_rows;
     		}
@@ -287,12 +288,14 @@ class grocery_CRUD_Model  extends CI_Model  {
     
     protected function _unique_join_name($field_name)
     {
-    	return 'j'.substr(md5($field_name),0,8); //This j is because is better for a string to begin with a letter and not with a number
+        //This j is because is better for a string to begin with a letter and not with a number
+    	return 'j'.substr(md5($field_name),0,8); 
     }
 
     protected function _unique_field_name($field_name)
     {
-    	return 's'.substr(md5($field_name),0,8); //This s is because is better for a string to begin with a letter and not with a number
+        //This s is because is better for a string to begin with a letter and not with a number
+    	return 's'.substr(md5($field_name),0,8); 
     }    
     
     function get_relation_array($field_name , $related_table , $related_field_title, $where_clause, $order_by, $limit = null, $search_like = null)

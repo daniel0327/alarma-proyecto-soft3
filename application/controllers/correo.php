@@ -5,6 +5,9 @@ require("phpmailer/class.smtp.php");
 
 class correo
 {
+	/**
+	*meodo que permite realizar el envio de correos
+	*/
 	function correo()
 	{
 		$mail = new PHPMailer();

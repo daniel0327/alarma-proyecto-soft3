@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>SisTraAlarmas</title>
+	<title>SisteAlarmas</title>
 	<style type='text/css'>
 		body
 		{
@@ -10,6 +10,24 @@
 			font-size: 14px;
 			background-color: #eee;
 		}
+		header
+		{
+			background: #20912D;
+			-webkit-border-radius: 40px;
+		}
+		footer
+		{
+			background: #20912D;
+			-webkit-border-radius: 40px;
+			height: 90px;
+		}
+
+		p
+		{
+			font-size: 25px;
+			padding-top: 32px;
+		}
+
 		a
 		{
 		    color: blue;
@@ -37,9 +55,21 @@
 		}
 		#logo{
 			display: block;
-    margin: 15px auto;
-    height: 165px;
-		}
+		    margin: 15px auto;
+		    height: 165px;
+		    padding-top: 10px;
+		    padding-bottom: 10px;
+			}
+		.boton{
+		      font-size:10px;
+		      font-family:Verdana,Helvetica;
+		      font-weight:bold;
+		      color:white;
+		      background:black;
+		      border:0px;
+		      width:130px;
+		      height:25px;
+		     }
 	</style>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
@@ -48,9 +78,13 @@
 </head>
 
 
-<body>
+<body BGCOLOR="#D8D8D8">
 
+	<header>
 		<img src="assets/images/uniquindio.PNG" id="logo">
+	</header>
+
+		
 	<div id="container">       
 		<h1>Sistema de trazabilidad para derechos de peticion y tutelas UQ</h1>
 	    <div>
@@ -85,9 +119,14 @@
 	<br>
 	<br>
 	<br>
-
-	
-			  <br /><a href='inicio'>Regresar al login</a> 
-	
+	<br />
+		<div align="">
+		  <form name="form1" action="inicio"  >
+		    <input type="submit" value="Salir" class="boton">
+		  </form>
+		</div>
+<footer>
+	<p align="center"> Pertinente Creativa Integradora</p>
+</footer>
 </body>
 </html>

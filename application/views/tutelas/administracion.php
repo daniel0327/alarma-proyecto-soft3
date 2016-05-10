@@ -76,16 +76,13 @@ foreach($css_files as $file): ?>
 	<script src="<?php echo $file; ?>"></script>
 <?php endforeach; ?>
 
-
-<link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/bootstrap/css/bootstrap.css" />
-
-
-
 <style type='text/css'>
 body
 {
-	font-family: Arial;
-	font-size: 14px;
+  font-family: Arial;
+  font-size: 14px;
+  margin: 8px;
+  padding: 10px;
 }
 a {
     color: blue;
@@ -94,11 +91,42 @@ a {
 }
 a:hover
 {
-	text-decoration: underline;
+  text-decoration: underline;
 }
+
+header
+{
+  background: #20912D;
+  -webkit-border-radius: 40px;
+}
+footer
+{
+  background: #20912D;
+  -webkit-border-radius: 40px;
+  height: 90px;
+}
+
+p
+{
+  font-size: 25px;
+  padding-top: 32px;
+}
+#logo{
+      display: block;
+        margin: 15px auto;
+        height: 165px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
 </style>
+<link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/bootstrap/css/bootstrap.css" />
 </head>
 <body>
+
+<header>
+  <img src="http://localhost/alertas-proyecto-soft3/assets/images/uniquindio.PNG" id="logo">
+</header>
+
 	<h1>Administración de Tutelas</h1>
     <div>
 	
@@ -118,16 +146,14 @@ a:hover
         width:130px;
         height:25px;
        }
+
+
 </style>
 <div align="">
   <form name="form1" action="http://localhost/alertas-proyecto-soft3/tecnico"  >
     <input type="submit" value="MENU PRINCIPAL" class="boton">
   </form>
 </div>
-<br>
-<br>
-<br>
-
     <h3>Enviar Notificación a un responsable</h3>
     <div class="correo">
       <form action="" method="post">      
@@ -135,13 +161,9 @@ a:hover
         <input type="submit" name='submit' value="Notificar" class='boton'>
       </form>
     </div>
-		 
-
     </div>
-	
-
-
-    <br>
-     
+    <footer>
+      <p align="center"> Pertinente Creativa Integradora</p>
+    </footer>     
 </body>
 </html>

@@ -29,7 +29,7 @@ class DerechoPeticion extends CI_Controller {
 	}
 
 	/*
-	 * 
+	 * funcion que define la estructura para la tabla de derechos de peticion
  	 **/
 	function administracion()
 	{
@@ -86,7 +86,7 @@ class DerechoPeticion extends CI_Controller {
 			
 		
 				$crud->field_type('Tipo_Derecho_Peticion','enum',array('queja','información','consulta'));
-			//$crud->set_relation('Asunto', 'derechopeticion', 'Asunto');
+			
 			
 			/* Generamos la tabla */
 			$output = $crud->render();

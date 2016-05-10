@@ -30,17 +30,16 @@ class reportesP extends CI_Controller
 	        'rows' => $userdata );
 
 
-	  $json =  json_encode($response);
-	  //echo $json;  
-	    
-		 
-		 
-		   $this->load->view('reportesP/administracion' ,$json);
+	  $json =  json_encode($response);		 
+	$this->load->view('reportesP/administracion' ,$json);
 	  
 	 
   
    }
    
+   /*
+   funcion que es llamada por el script que crea la tabla de reportes de derechos de peticion
+   */
    function load()
    {
 	 

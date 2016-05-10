@@ -86,35 +86,61 @@
 <style type="text/css">
 		   h4{ font-family:Arial, Helvetica, sans-serif;
 		   color:#630;}
-		   .cabecera{
-                background: #4A3C31;
-                border-bottom: 5px solid #69AD3C;
-                margin:-8px 0 0 -8px;
-                width: 100%;
-			}
-           .cabecera img{ 
-		        margin:40px 0 0 30px;
-		    }
+
+		     .boton{
+		           font-size:10px;
+		           font-family:Verdana,Helvetica;
+		           font-weight:bold;
+		           color:white;
+		           background:black;
+		           border:0px;
+		           width:130px;
+		           height:25px;
+		          }
+		   header
+		   {
+		     background: #20912D;
+		     -webkit-border-radius: 40px;
+		   }
+		   footer
+		   {
+		     background: #20912D;
+		     -webkit-border-radius: 40px;
+		     height: 90px;
+		   }
+
+		   p
+		   {
+		     font-size: 25px;
+		     padding-top: 32px;
+		   }
+		   #logo{
+		         display: block;
+		           margin: 15px auto;
+		           height: 165px;
+		           padding-top: 10px;
+		           padding-bottom: 10px;
+		         }
+
 
 </style>	
 	</head>
 <body>
-<div class="cabecera"><a href="http://jqueryeasy.com/"><img src="http://www.jqueryeasy.com/application/views/templates/colorvoid/static/images/logo.gif" border="0" /></a></div>
 
-	
-	
-	
+	<header>
+	  <img src="http://localhost/alertas-proyecto-soft3/assets/images/uniquindio.PNG" id="logo">
+	</header>	
 	<center><h4>Graficos </h4></center>
 	
 	<div id="container" style="width: 800px; height: 400px; margin: 0 auto"></div>
-	<br>
-    <br>
     <div align="left">
 
-	 <input type="button" value="Volver al inicio" onclick="history.back(-1)" />
+	 <input type="button" class='boton' value="Volver al inicio" onclick="history.back(-1)" />
   </div>
 	
 		
-		
+  	<footer>
+      <p align="center"> Pertinente Creativa Integradora</p>
+    </footer>		
 </body>
 </html>

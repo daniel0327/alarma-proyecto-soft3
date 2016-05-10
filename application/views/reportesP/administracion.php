@@ -19,13 +19,48 @@
 </head>
 <body  BGCOLOR="#D8D8D8">
 
+   <style type="text/css">
+    .boton{
+          font-size:10px;
+          font-family:Verdana,Helvetica;
+          font-weight:bold;
+          color:white;
+          background:black;
+          border:0px;
+          width:130px;
+          height:25px;
+         }
+  header
+  {
+    background: #20912D;
+    -webkit-border-radius: 40px;
+  }
+  footer
+  {
+    background: #20912D;
+    -webkit-border-radius: 40px;
+    height: 90px;
+  }
 
-	<div >
-		
+  p
+  {
+    font-size: 25px;
+    padding-top: 32px;
+  }
+  #logo{
+        display: block;
+          margin: 15px auto;
+          height: 165px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+  </style>
+  <header>
+    <img src="http://localhost/alertas-proyecto-soft3/assets/images/uniquindio.PNG" id="logo">
+  </header>
+	<div>		
 		<br>
-			
-
-	<center><h2>REPORTE DE DERECHOS DE PETICION</h2></center>
+	<center><h2>REPORTE DE DERECHOS DE PETICIÓN</h2></center>
 
     
 	</div>
@@ -35,7 +70,7 @@
 <table width="350" cellspacing="1" cellpadding="3" border="0" bgcolor="#1E679A"> 
 <tr> 
    <td><font color="#FFFFFF" face="arial, verdana, helvetica"> 
-<b>Estados de derechos de peticion</b> 
+<b>Estados de derechos de petición</b> 
    </font></td> 
 </tr> 
 <tr> 
@@ -66,7 +101,7 @@
 
 <title>proyecto software</title>
 
-<div><h3>Tabla De Verificacion de Vencimientos De Derechos de Peticion</h3></div>
+<div><h3>Tabla De Verificación de Vencimientos De Derechos de Petición</h3></div>
 
 
 
@@ -129,8 +164,10 @@ var issueListingGrid = null;
     <br>
     <div align="left">
 
-	 <input type="button" value="Volver al inicio" onclick="history.back(-1)" />
+	 <input type="button" value="Volver al inicio" onclick="history.back(-1)" class='boton' />
   </div>
-	
+	<footer>
+    <p align="center"> Pertinente Creativa Integradora</p>
+  </footer>
 </body>
 </html>
