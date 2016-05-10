@@ -6,6 +6,9 @@
 	define('_USER_NAME_', 'root');
 	define('_DB_PASSWORD', '');
 	define('_DATABASE_NAME_', 'alarma');
+
+	require("phpmailer/class.phpmailer.php");
+	require("phpmailer/class.smtp.php");
 	class CRUD_DB
 	{
 
