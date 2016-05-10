@@ -28,7 +28,7 @@ class Reportes_model extends CI_Model {
 		if($tamaño>0)
 	    {
 			 
-			// echo "hay datos"; 
+			
 			 foreach ($result as $row)
 					{
 						

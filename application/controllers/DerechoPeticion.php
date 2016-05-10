@@ -1,5 +1,8 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
+<?php 
+if ( ! defined('BASEPATH')) 
+	{
+		exit('No direct script access allowed');
+	}
 /* Heredamos de la clase CI_Controller */
 class DerechoPeticion extends CI_Controller {
 
@@ -22,7 +25,7 @@ class DerechoPeticion extends CI_Controller {
 	function index() 
 	{
 		/*
-		 * Mandamos todo lo que llegue a la funcion
+		 * Mandamos lo que llegue a la funcion
 		 * administracion().
 		 **/
 		redirect('DerechoPeticion/administracion');

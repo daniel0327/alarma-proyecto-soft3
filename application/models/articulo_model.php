@@ -27,8 +27,6 @@ class Articulo_model extends CI_Model {
 		 
 		if($tamaño>0)
 	      {
-			// echo $tamaño;
-			// echo "hay datos"; 
 			
 		
 			 foreach ($result as $row)
@@ -71,7 +69,7 @@ class Articulo_model extends CI_Model {
 								 $critico6= date('Y-m-d',strtotime('-2 days', strtotime($FechaVencimiento))); 
 								 $critico7= date('Y-m-d',strtotime('-1 days', strtotime($FechaVencimiento))); 
 							
-								//echo($informativo6);
+								
 							
 							if(strtotime($informativo1) == $hoy  || strtotime($informativo2) == $hoy || strtotime($informativo3) == $hoy
 						    || strtotime($informativo4) == $hoy  || strtotime($informativo5) == $hoy || strtotime($informativo6) == $hoy

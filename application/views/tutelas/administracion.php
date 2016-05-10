@@ -31,7 +31,6 @@ require("phpmailer/class.smtp.php");
 
     $mail = new PHPMailer();
     $mail->CharSet = "utf-8";
-    //$mail->Encoding = "quoted­printable";
     //indico a la clase que use SMTP
     $mail->IsSMTP();
     //permite modo debug para ver mensajes de las cosas que van ocurriendo
