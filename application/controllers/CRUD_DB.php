@@ -235,11 +235,9 @@ public function enviarCorreoTutela()
 		//indico destinatario
 		$address = "d-cia@hotmail.com";
 		$mail->AddAddress($address, "Daniel");
-		if(!$mail->Send()) {
+		$mail->Send();
 		return "test mensaje tutela";
-		} else {
-		return "test mensaje tutela";
-		}
+		
 }
 
 public function enviarCorreoPeticion()
@@ -267,11 +265,8 @@ public function enviarCorreoPeticion()
 		//indico destinatario
 		$address = "d-cia@hotmail.com";
 		$mail->AddAddress($address, "Daniel");
-		if(!$mail->Send()) {
-		return "test mensaje derecho de peticion";
-		} else {
-		return "test mensaje derecho de peticion";
-		}
+		$mail->Send();
+		return "test mensaje tutela";
 }
 
 public function notificarUsuario()
@@ -299,11 +294,8 @@ public function notificarUsuario()
 		//indico destinatario
 		$address = "d-cia@hotmail.com";
 		$mail->AddAddress($address, "Daniel");
-		if(!$mail->Send()) {
-		return "usuario notificado";
-		} else {
-		return "usuario notificado";
-		}
+		$mail->Send();
+		return "test mensaje tutela";
 }
 
 }

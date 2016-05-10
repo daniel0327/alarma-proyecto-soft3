@@ -24,7 +24,10 @@ $svg = (string) $_POST['svg'];
 $filename = (string) $_POST['filename'];
 
 // prepare variables
-if (!$filename) $filename = 'chart';
+if (!$filename) 
+	{
+		$filename = 'chart';
+	}
 if (get_magic_quotes_gpc()) {
 	$svg = stripslashes($svg);	
 }
@@ -56,7 +59,9 @@ if ($typeString) {
 	// size
 	if ($_POST['width']) {
 		$width = (int)$_POST['width'];
-		if ($width) $width = "-w $width";
+		if ($width) {
+			$width = "-w $width";
+		}
 	}
 
 	// generate the temporary file

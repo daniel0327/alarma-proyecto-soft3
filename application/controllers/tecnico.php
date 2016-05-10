@@ -1,5 +1,7 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
+<?php if ( ! defined('BASEPATH')) 
+{
+	exit('No direct script access allowed');
+}
 /* Heredamos de la clase CI_Controller */
 class tecnico extends CI_Controller 
 
