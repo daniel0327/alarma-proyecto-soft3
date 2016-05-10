@@ -75,7 +75,7 @@ public function actualizarDerechodePeticion()
 	}
 
 		$records = $databaseConnection->prepare(
-			"UPDATE FROM `derechopeticion` SET `Solicitante` = 'jorge contreras' WHERE (`Radicado_Interno` = 87364)");
+			"UPDATE FROM derechopeticion SET Solicitante = 'jorge contreras' WHERE Radicado_Interno = 87364");
 		$records->execute();
 
 		
