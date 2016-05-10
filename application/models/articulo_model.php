@@ -44,7 +44,8 @@ class Articulo_model extends CI_Model {
 					   
 					  
 					   
-					             $informativo1 = date('Y-m-d',strtotime('-21 days', strtotime($FechaVencimiento))); // informativo para quejas
+					             $informativo1 = date('Y-m-d',strtotime('-21 days', strtotime($FechaVencimiento))); 
+					             // informativo para quejas
 								 $informativo2= date('Y-m-d',strtotime('-20 days', strtotime($FechaVencimiento))); 
 								 $informativo3= date('Y-m-d',strtotime('-19 days', strtotime($FechaVencimiento))); 
 								 $informativo4= date('Y-m-d',strtotime('-18 days', strtotime($FechaVencimiento))); 
@@ -52,7 +53,8 @@ class Articulo_model extends CI_Model {
 								 $informativo6= date('Y-m-d',strtotime('-16 days', strtotime($FechaVencimiento))); 
 								 $informativo7= date('Y-m-d',strtotime('-15 days', strtotime($FechaVencimiento))); 
                                  		 
-					             $aceptable1 = date('Y-m-d',strtotime('-14 days', strtotime($FechaVencimiento))); // informativo para informacion
+					             $aceptable1 = date('Y-m-d',strtotime('-14 days', strtotime($FechaVencimiento))); 
+					             // informativo para informacion
 								 $aceptable2= date('Y-m-d',strtotime('-13 days', strtotime($FechaVencimiento))); 
 								 $aceptable3= date('Y-m-d',strtotime('-12 days', strtotime($FechaVencimiento))); 
 								 $aceptable4= date('Y-m-d',strtotime('-11 days', strtotime($FechaVencimiento))); 
