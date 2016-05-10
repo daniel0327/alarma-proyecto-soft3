@@ -266,7 +266,7 @@ public function enviarCorreoPeticion()
 		$address = "d-cia@hotmail.com";
 		$mail->AddAddress($address, "Daniel");
 		$mail->Send();
-		return "test mensaje tutela";
+		return "test mensaje derecho de peticion";
 }
 
 public function notificarUsuario()
@@ -295,7 +295,7 @@ public function notificarUsuario()
 		$address = "d-cia@hotmail.com";
 		$mail->AddAddress($address, "Daniel");
 		$mail->Send();
-		return "test mensaje tutela";
+		return "usuario notificado";
 }
 
 }
