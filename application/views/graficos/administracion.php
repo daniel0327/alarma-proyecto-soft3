@@ -23,12 +23,12 @@
 
 	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	   <title>Estadisticas con Jquery | Jquery Easy</title>
-		<script type="text/javascript" src="http://localhost/alarma/application/views/graficos/js/jquery-1.4.2.min.js"></script>
-		<script type="text/javascript" src="http://localhost/alarma/application/views/graficos/js/highcharts.js"></script>
+		<script type="text/javascript" src="http://localhost/alertas-proyecto-soft3/application/views/graficos/js/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="http://localhost/alertas-proyecto-soft3/application/views/graficos/js/highcharts.js"></script>
 		<!-- Este archivo es para darle un estilo (Este archivo es Opcional) -->
-	    <script type="text/javascript" src="http://localhost/alarma/application/views/graficos/js/themes/grid.js"></script>
+	    <script type="text/javascript" src="http://localhost/alertas-proyecto-soft3/application/views/graficos/js/themes/grid.js"></script>
 		<!-- Este archivo es para poder exportar losd atos que obtengamos -->
-		<script type="text/javascript" src="http://localhost/alarma/application/views/graficos/js/modules/exporting.js"></script>
+		<script type="text/javascript" src="http://localhost/alertas-proyecto-soft3/application/views/graficos/js/modules/exporting.js"></script>
 	
 		<script type="text/javascript">
 		
@@ -47,7 +47,7 @@
 						plotShadow: false
 					},
 					title: {
-						text: 'Estadistica Derechos de Peticion y Tutelas, 2015-2'
+						text: 'Estadistica Derechos de Peticion y Tutelas'
 					},
 					tooltip: {
 						formatter: function() {
